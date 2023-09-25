@@ -61,7 +61,8 @@
         console.log(r);
         //document.write(r);
         if(r){
-          document.location.replace(r);
+          //document.location.replace(r); //redirige a la URL proporcionada
+          document.body.innerHTML = r;
         }
       })
       .catch(err => console.log(err))
